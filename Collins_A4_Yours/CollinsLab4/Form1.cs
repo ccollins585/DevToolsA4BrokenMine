@@ -88,12 +88,12 @@ namespace CollinsLab4
         private void btnBook_Click(object sender, EventArgs e)
         {
             //Declare constants and variables
-            const double MEXICOPERSON = 2300.89;
+            const double MEXICOPERSON = 2300.79;
             const double PRICEPERSON = 2150.50;
             const double DISCOUNT = 0.10;
             double price = 0;
             string agent = "Chris Collins";
-            int applyDis = "Cash Discount Applied";
+            string applyDis = "Cash Discount Applied";
 
 
             //Validate integer that was entered
@@ -210,7 +210,7 @@ namespace CollinsLab4
         {
             string dspMessage = "Trip booked an paid\nPrice: " + lblPrice.Text;
             string dspTitle = "Confirmation Email Sent";
-            DisplayMsg(dspMessage dspTitle);
+            DisplayMsg(dspMessage ,dspTitle);
             grBook.Enabled = true;
             ResetTrip();
         }
